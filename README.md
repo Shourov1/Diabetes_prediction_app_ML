@@ -4,7 +4,7 @@ This application is made using sklearn Machine Learning libraries and pyqt5 for 
 
 Support Vector Machine classifies input data with 80% accuracy. PIMA Indians diabetes dataset from the UCI archive is used to train the model.
 
-<img src="./screenshots/Screenshot.png" width="100">
+<img src="./screenshots/Screenshot.png" width="250">
 
 ## How to start
 
