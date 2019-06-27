@@ -1,0 +1,29 @@
+language: python
+ python:
+  - 3.7
+branches:
+  only:
+    - master
+before_install:
+  - cd ..
+  - curl -L -O http://sourceforge.net/projects/pyqt/files/sip/sip-4.14.1/sip-4.14.1.tar.gz
+  - tar -xvf sip-4.14.1.tar.gz
+  - cd sip-4.14.1
+  - python configure.py
+  - make -j 2
+  - sudo make install
+  - cd ..
+  - curl -L -O http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.9.5/PyQt-x11-gpl-4.9.5.tar.gz
+  - tar -xvf PyQt-x11-gpl-4.9.5.tar.gz
+  - cd PyQt-x11-gpl-4.9.5
+  - python configure.py --confirm-license
+  - make -j 2
+  - sudo make install
+  - cd ../gayeogi
+script: Diabetes_prediction_app_ML/
+deploy: 
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+   branch: master 
