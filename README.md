@@ -1,5 +1,7 @@
 # Diabetes prediction application using Python
 
+[![CircleCI](https://circleci.com/gh/Shourov1/Diabetes_prediction_app_ML.svg?style=svg)](https://circleci.com/gh/Shourov1/Diabetes_prediction_app_ML) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This application is made using [sklearn](https://en.wikipedia.org/wiki/Scikit-learn) Machine Learning libraries and [pyqt5](https://pypi.org/project/PyQt5/) for its graphical UI. 
 
 Support Vector Machine classifies input data with 80% accuracy. [PIMA Indians diabetes dataset](https://archive.ics.uci.edu/ml/datasets/diabetes) from the UCI archive is used to train the model.
